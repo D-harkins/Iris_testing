@@ -15,7 +15,7 @@ app = FastAPI()
 # ✅ Databricks API Details
 DATABRICKS_INSTANCE = "https://ithaka-production.cloud.databricks.com"
 TOKEN = os.getenv("DATABRICKS_ACCESS_TOKEN")
-WAREHOUSE_ID = "89a18bf87de4de72"
+WAREHOUSE_ID = os.getenv("WAREHOUSE_ID")
 API_URL = f"{DATABRICKS_INSTANCE}/api/2.0/sql/statements"
 
 SQL_QUERY = """SELECT * FROM s_r.demo.iris_flowers"""

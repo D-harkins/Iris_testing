@@ -1,0 +1,3 @@
+name: iris-testing
+entrypoint: uvicorn app:app --host 0.0.0.0 --port 8000
+region: us-east-1
